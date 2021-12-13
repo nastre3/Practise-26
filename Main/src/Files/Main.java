@@ -41,5 +41,15 @@ public class Main {
         for (String fileName: files) {
             System.out.println(fileName);
         }
+
+        // Размер файлов в байтах
+        long length = 0L;
+        for (String fileName: files) {
+            System.out.println(fileName.length());
+            length += fileName.length();
+        }
+
+        // Размер каталога в мегабайтах
+        System.out.println(length / 1024 / 1024 + " MB");
     }
 }
